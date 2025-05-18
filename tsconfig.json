@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "lib": ["ES2022"],
+    "strict": true,
+    "declaration": true,
+    "rootDir": "./",
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["packages/**/*.ts"]
+}

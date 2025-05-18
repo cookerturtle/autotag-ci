@@ -1,0 +1,10 @@
+{
+  "name": "@autotag-ci/plugin-react",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "@autotag-ci/core": "workspace:*"
+  }
+}

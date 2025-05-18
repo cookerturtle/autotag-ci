@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["index.ts"],
+  "sourcesContent": ["export async function inject(): Promise<void> {\n  // TODO: implement core injection engine\n  throw new Error('Not implemented');\n}\nexport * from './types.js';\n"],
+  "mappings": ";AAAA,eAAsB,SAAwB;AAE5C,QAAM,IAAI,MAAM,iBAAiB;AACnC;",
+  "names": []
+}

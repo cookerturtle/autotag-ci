@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["index.ts"],
+  "sourcesContent": ["import type { Plugin } from '../../core/src/types'; // adjust once types exist\n\nexport const pluginReact: Plugin = {\n  async detect() { return false; },\n  async inject() { /* no-op for now */ }\n};\n\nexport default pluginReact;\n"],
+  "mappings": ";AAEO,IAAM,cAAsB;AAAA,EACjC,MAAM,SAAS;AAAE,WAAO;AAAA,EAAO;AAAA,EAC/B,MAAM,SAAS;AAAA,EAAsB;AACvC;AAEA,IAAO,cAAQ;",
+  "names": []
+}
