@@ -1,0 +1,15 @@
+{
+  "name": "autotag-ci",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "AutoTag-CI monorepo (core + plugins + docs)",
+  "bin": {
+    "autotag-ci": "./cli.mjs"
+  },
+  "scripts": {
+    "build": "echo 'stub – tooling arrives next step'",
+    "test": "echo 'stub – tests arrive next step'"
+  },
+  "license": "MIT"
+}
