@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "@autotag-ci/core": "workspace:*"
+    "@autotag-ci/core": "0.0.0"
   },
   "dependencies": {
-    "fast-glob": "^3.3.2"
+    "dom-serializer": "^2.0.0",
+    "fast-glob": "^3.3.3",
+    "htmlparser2": "^10.0.0"
   }
 }

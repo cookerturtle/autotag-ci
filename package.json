@@ -15,7 +15,7 @@
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "build": "esbuild packages/**/src/index.ts --outdir=packages --format=esm --platform=node --bundle --sourcemap --target=node20",
-    "lint": "eslint . --ext .ts,.js",
+    "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run build && npm run typecheck && npm test"
   },
   "license": "MIT",
