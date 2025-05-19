@@ -79,4 +79,4 @@ async function inject(opts: InjectOptions): Promise<void> {
   }
 }
 
-export { detect, inject };
+export default { detect, inject };

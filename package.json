@@ -14,8 +14,12 @@
     "dev": "vitest watch",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "build": "esbuild packages/**/src/index.ts --outdir=packages --format=esm --platform=node --bundle --sourcemap --target=node20",
+    "build": "npm-run-all --parallel build:*",
+    "build:core": "esbuild packages/core/src/index.ts --outfile=packages/core/dist/index.js --format=esm --platform=node --bundle --sourcemap --target=node20",
+    "build:plugin-react": "esbuild packages/plugin-react/src/index.ts --outfile=packages/plugin-react/dist/index.js --format=esm --platform=node --bundle --sourcemap --target=node20",
     "lint": "eslint . --ext .ts",
+    "clean": "rimraf packages/*/dist",
+    "prebuild": "npm run clean",
     "prepublishOnly": "npm run build && npm run typecheck && npm test"
   },
   "license": "MIT",

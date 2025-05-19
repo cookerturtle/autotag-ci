@@ -3,7 +3,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import os from 'os';
 
-import { detect, inject } from './index';
+import plugin from './index';
+const { detect, inject } = plugin;
 
 /* ---------------------------------------------------------------- *
  * Helpers                                                          *
