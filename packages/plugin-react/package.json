@@ -6,5 +6,8 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "@autotag-ci/core": "workspace:*"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2"
   }
 }

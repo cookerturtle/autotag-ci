@@ -8,7 +8,8 @@
     "declaration": true,
     "rootDir": "./",
     "types": ["node"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["packages/**/*.ts"]
 }

@@ -5,8 +5,8 @@
 export interface InjectOptions {
   buildDir: string;           // absolute or relative path to the framework’s build output
   snippetPath: string;        // path (or URL) to the tracking script to insert
-  outDir?: string;            // if provided, write mutated HTML here instead of in-place
   dryRun?: boolean;           // when true, just report would-be changes
+  outDir?: string;            // if provided, write mutated HTML here instead of in-place
 }
 
 export interface Plugin {
@@ -16,3 +16,7 @@ export interface Plugin {
   /** Perform the actual HTML mutation / copy work */
   inject(opts: InjectOptions): Promise<void>;
 }
+
+export type PluginModule = {
+  default?: Plugin;
+} & Partial<Plugin>;

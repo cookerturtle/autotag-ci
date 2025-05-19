@@ -1,3 +1,7 @@
+/**
+ * Public errors shared between @autotag-ci/core and all plugins.
+ */
+
 export class NoPluginFoundError extends Error {
   constructor(dir: string) {
     super(`No plugin claims responsibility for build dir: ${dir}`);
